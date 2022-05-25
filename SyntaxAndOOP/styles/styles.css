@@ -1,0 +1,45 @@
+body{
+    font-family: "Arial";
+    font-size: 18px;
+    background-color: rgba(173, 211, 248, 0.71);
+}
+
+html, body, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.dot{
+    border-top: 2px dotted #000;
+}
+
+.bold-text{
+    font-weight: 700;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.container{
+    background-color: bisque;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+p{
+    margin: 15px 0;
+}
