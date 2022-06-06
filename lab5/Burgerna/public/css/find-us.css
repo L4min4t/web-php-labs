@@ -1,0 +1,115 @@
+.our-branches{
+    font-size: 60px;
+    margin: 30px auto 15px 12%;
+}
+
+.my-map{
+    width: 76%;
+    height: 700px;
+    margin-left: 12%;
+    border: #000 1px solid;
+}
+
+.my-sel{
+    font-family: 'Comfortaa';
+    font-size: 36px;
+    margin: 30px auto 0px 12%;
+    background-color: rgba(1, 1, 1, 0);
+    color: #434A42;
+    border: #000 1px solid;
+}
+
+.branch-info{
+    font-size: 36px;
+    margin: 10px auto 60px 12%;
+}
+
+@media (max-width: 1550px) {
+    .our-branches{
+        font-size: 48px;
+        margin: 30px auto 15px 12%;
+    }
+    
+    .my-map{
+        width: 76%;
+
+    }
+    
+    .my-sel{
+        font-size: 30px;
+        margin: 30px auto 0px 12%;
+    }
+    
+    .branch-info{
+        font-size: 30px;
+        margin: 10px auto 60px 12%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .our-branches{
+        font-size: 40px;
+        margin: 30px auto 15px 12%;
+    }
+    
+    .my-map{
+        width: 76%;
+
+    }
+    
+    .my-sel{
+        font-size: 26px;
+        margin: 30px auto 0px 12%;
+    }
+    
+    .branch-info{
+        font-size: 26px;
+        margin: 10px auto 60px 12%;
+    }
+}
+
+@media (max-width: 900px) {
+    .our-branches{
+        font-size: 30px;
+        margin: 15px auto 10px 15px;
+    }
+    
+    .my-map{
+        width: 94.8%;
+        margin-left: 15px;
+        height: 80vh;
+    }
+    
+    .my-sel{
+        font-size: 22px;
+        margin: 15px auto 0px 15px;
+    }
+    
+    .branch-info{
+        font-size: 22px;
+        margin: 8px auto 15px 15px;
+    }
+}
+
+@media (max-width: 470px){
+    .our-branches{
+        font-size: 24px;
+        margin: 10px auto 8px 15px;
+    }
+    
+    .my-map{
+        width: 86%;
+        margin-left: 15px;
+        height: 73vh;
+    }
+    
+    .my-sel{
+        font-size: 18px;
+        margin: 10px auto 0px 15px;
+    }
+    
+    .branch-info{
+        font-size: 18px;
+        margin: 6px auto 10px 15px;
+    }
+}
