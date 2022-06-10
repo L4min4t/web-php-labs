@@ -1,0 +1,440 @@
+@import url('index.css');
+@import url('menu.css');
+@import url('find-us.css');
+
+
+body{
+    background: url("../images/back.png");
+    background-color: #fff;
+    background-blend-mode: multiply;
+    background-size: 20%;
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    color: #434A42;
+}
+
+.bold-text{
+    font-weight: 600;
+}
+
+body, html, p, a, h1, h2, h3, h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #434A42;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    border-radius: 1px;
+    width: 76vw;
+    background-color: rgba(67, 74, 66, 0.6);
+}
+
+.navbar{
+    height: 100px;
+    background-color: #F5E6E8;
+    padding: 0 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-img{
+    width: 100px;
+    transition: transform 0.5s;
+}
+
+.logo:hover .logo-img{
+    position: relative;
+    transform:  translateX(3%);
+}
+
+.logo:hover .logo-name{
+    position: relative;
+    transform:  translateX(-2%);
+}
+
+.logo-name {
+    width: 257px;
+    height: 64px;
+    font-size: 36px;
+    text-align: center;
+    margin: auto 0;
+    font-weight: 700;
+    transition: transform 0.5s;
+}
+.logo-name a:last-child {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nav-buttons{
+    width: 500px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    justify-self: center;
+}
+
+.underlined{
+    border-bottom: 2.5px  #434A42 solid;
+}
+
+.anim {
+    display: inline-block;
+    position: relative;
+    color: #434A42;
+}
+
+.anim:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #434A42;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+
+.anim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.phone {
+    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+    border: 0;
+    color: #434A42;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Comfortaa';
+}
+
+.footer{
+
+    height: 100px;
+    background-color: #F5E6E8;
+    padding: 0 12%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cp-phone {
+    cursor:pointer;
+    position: relative;
+    display: block;
+}
+
+.cp-phone .hint {
+    visibility: hidden;
+    width: 110px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 60%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.cp-phone .hint::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.cp-phone:hover .hint {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dont-do-this{
+    padding-left: 3%;
+    font-size: 20px;
+}
+
+.navbar .cp-phone{
+    display: flex;
+    justify-self: right;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-ico{
+    width: 35px;
+}
+
+#op{
+    display:none;
+}
+
+.lower label:hover{
+    cursor:pointer;
+}
+
+.overlay{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    right: 11%;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.overlay label{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background-image: url("../images/close.png");
+    background-size: 35px;
+    z-index: 2;
+    cursor:pointer;
+}
+
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    height: 20%;
+    height: calc(100% / 5);
+    min-height: 54px;
+}
+
+.overlay ul li a {
+    font-weight: 300;
+    font-size: 36px;
+    display: block;
+    color: #434A42;
+    text-decoration:none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    font-family: 'Comfortaa';
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: #EF9CA7;
+}
+
+.lower~.overlay-hugeinc{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.overlay-hugeinc{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav ul {
+    opacity: 0.4;
+    -webkit-transform: translateY(-25%) rotateX(35deg);
+    transform: translateY(-25%) rotateX(35deg);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#op:checked~.overlay-hugeinc nav ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+#op:not(:checked)~.overlay-hugeinc nav ul {
+    -webkit-transform: translateY(25%) rotateX(-35deg);
+    transform: translateY(25%) rotateX(-35deg);
+}
+
+
+@media (max-width: 1550px) {
+    body{
+        background-size: 25%;
+    }
+
+    .nav-buttons{
+        width: 380px;
+        height: 28px;
+        font-size: 24px;
+    }
+
+    .phone {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1300px) {
+    body{
+        background-size: 28%;
+    }
+
+    .nav-buttons{
+        display: none;
+    }
+
+    .navbar .phone {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .dont-do-this{
+       display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+}
+
+@media (max-width: 900px) {
+    body{
+        background-size: 35%;
+    }
+
+    .navbar{
+        height: 60px;
+        padding: 0 15px;
+    }
+    .logo{
+        height: 60px;
+        width: 270px;
+    }
+    .footer .logo{
+        justify-content: right;
+    }
+    .logo-img{
+        width: 60px;
+    }
+    .logo-name{
+        margin-top: 20px;
+        position: relative;
+        height: 25px;
+        width: 135px;
+        font-size: 20px;
+    }
+    .logo-name a:last-child{
+        display: none;
+        width: 20px;
+    }
+    .menu-ico{
+        width: 25px;
+    }
+    .overlay{
+        position: fixed;
+        width: 170px;
+        height: 220px;
+        top: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.80);
+    }
+
+    .overlay label{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background-size: 25px;
+
+    }
+    .overlay ul li a {
+        font-size: 18px;
+    }
+    .overlay ul li {
+        display: block;
+        height: 45px;
+        min-height: 15px;
+    }
+    .footer{
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .phone{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 720px){
+    body{
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 470px){
+    body{
+        background-size: 60%;
+    }
+
+    .phone{
+        font-size: 12px;
+    }
+    .footer .logo-img{
+        width: 40px;
+        margin-top: 8px;
+    }
+    .footer .logo-name{
+        font-size: 15px;
+        width: 103px;
+    }
+    .footer .logo{
+        width: 150px;
+    }
+}
+
