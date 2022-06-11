@@ -42,7 +42,10 @@
 </p>
 <br>
 <br>
-<p class="branch-info">Приклад використання manyToMany<br>
-    Фільми, в яких знімався Леонардо Дікапріо: "{{$DicapriosMovies[0]->name}}", "{{$DicapriosMovies[1]->name}}"</p>
+<p class="branch-info">Приклад використання manyToMany<br><br>
+    Фільми, в яких знімався Леонардо Дікапріо: "{{$DicapriosMovies[0]->name}}", "{{$DicapriosMovies[1]->name}}"<br>
+    Актори фільму "Вовк з Уолл-стріт":<br>
+    -{{$filmsActors[0]->name}} {{$filmsActors[0]->surname}}<br>
+    -{{$filmsActors[1]->name}} {{$filmsActors[1]->surname}}</p>
 
 @endsection
