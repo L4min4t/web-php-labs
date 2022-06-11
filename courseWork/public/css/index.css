@@ -1,0 +1,891 @@
+.stimulate {
+    margin: 60px auto;
+    width: 1340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.label p:first-child{
+    font-size: 64px;
+}
+
+.label p:last-child{
+    font-size: 48px;
+}
+
+.order-button{
+    margin-top: 20px;
+    background-color: #EF9CA7;
+    color: #393f38;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 15px;
+    border: 0px;
+    font-family: 'Comfortaa';
+}
+
+.call {
+    position: relative;
+    display: block;
+}
+
+.call .hint {
+    visibility: hidden;
+    width: 130px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    left: 35%;
+    margin-left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 18px;
+}
+
+.call .hint::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.call:hover .hint {
+    visibility: visible;
+    opacity: 1;
+}
+
+.big-burger{
+    max-height: 850px;
+    background-size: cover;
+    border-radius: 100px;
+    outline: 15px solid rgba(213, 215, 212, 0.63);
+    outline-offset: -15px;
+}
+
+#hor{
+    display: none;
+}
+
+.time {
+    margin: 60px auto;
+    padding: 0 12%;
+    width: 1340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 32px;
+}
+
+.work-hours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 410px;
+}
+
+.visit-us{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 410px;
+}
+
+.timer{
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.meet-point {
+    max-width: 200px;
+    margin-bottom: 60px;
+}
+
+.t-45{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.choise{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.mini-menu{
+    margin: 30px auto 60px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 1340px;
+}
+
+.mini-position{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 320px;
+    height: 690px;
+}
+
+.burger-pic{
+    border-radius: 250px;
+    width: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.burger-name{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.burger-discr{
+    font-size: 24px;
+    font-weight: 400;
+    background: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.burger-pric{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.extr-cheese{
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 250px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-in-menu{
+    position: relative;
+    font-size: 46px;
+    font-weight: 600;
+    text-decoration: underline;
+    top: -140px;
+}
+
+.call-us{
+    border-radius: 20px;
+    border: 2px dotted rgba(0, 0, 0, 0.6);
+    font-size: 64px;
+    max-width: 1000px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+
+.promo {
+    position: relative;
+    display: block;
+    text-decoration: underline;
+    font-family: 'Comfortaa';
+    font-size: 36px;
+    border: 0;
+    color: #434A42;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.promo .prom {
+    visibility: hidden;
+    width: 170px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 40%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 18px;
+}
+
+.promo .prom::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.promo:hover .prom {
+    visibility: visible;
+    opacity: 1;
+}
+
+#small{
+    display: none;
+}
+
+
+
+@media (max-width: 1600px) {
+    .stimulate {
+        margin: 60px auto;
+        width: 76%;
+        font-size: 30px;
+    }
+    
+    .label p:first-child{
+        font-size: 56px;
+    }
+    
+    .label p:last-child{
+        font-size: 38px;
+    }
+    
+    .order-button{
+        margin-top: 20px;
+        font-size: 28px;
+        padding: 20px;
+
+    }
+    .big-burger{
+        height: 650px;
+        outline-offset: -15px;
+    }
+    
+    .time {
+        margin: 60px auto;
+        padding: 0 12%;
+        width: 76%;
+        font-size: 26px;
+    }
+    
+    .work-hours{
+        height: 410px;
+    }
+    
+    .visit-us{
+        height: 410px;
+    }
+    
+    .timer{
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .meet-point {
+        max-width: 200px;
+        margin-bottom: 60px;
+    }
+    
+    .t-45{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .promo {
+        font-size: 28px;
+    }
+    
+    .choise{
+        margin-top: 60px;
+        font-size: 56px;
+        font-weight: 500;
+    }
+    
+    .mini-menu{
+        margin: 30px auto 60px;
+        width: 76%;
+    }
+    
+    .mini-position{
+        align-items: center;
+        width: 250px;
+        height: 560px;
+    }
+    
+    .burger-pic{
+        border-radius: 250px;
+        width: 250px;
+    }
+    
+    .burger-name{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .burger-discr{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .burger-pric{
+        font-size: 38px;
+        font-weight: 600;
+    }
+    
+    .extr-cheese{
+        width: 250px;
+        height: 250px;
+        font-size: 24px;
+    }
+    
+    .more-in-menu{
+        font-size: 38px;
+        top: -140px;
+    }
+    
+    .call-us{
+        border-radius: 20px;
+        font-size: 56px;
+        max-width: 850px;
+        height: 200px;
+        margin: 60px auto;
+    }  
+    
+}
+
+@media (max-width: 1380px) {
+    .stimulate {
+        margin: 50px auto;
+        width: 76%;
+        font-size: 26px;
+    }
+    
+    .label p:first-child{
+        font-size: 40px;
+    }
+    
+    .label p:last-child{
+        font-size: 26px;
+    }
+    
+    .order-button{
+        margin-top: 20px;
+        font-size: 26px;
+        padding: 15px;
+
+    }
+    .big-burger{
+        height: 520px;
+        outline-offset: -15px;
+    }
+    
+    .time {
+        margin: 60px auto;
+        padding: 0 12%;
+        width: 76%;
+        font-size: 26px;
+    }
+    
+    .work-hours{
+        height: 410px;
+    }
+    
+    .visit-us{
+        height: 410px;
+    }
+    
+    .timer{
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .meet-point {
+        max-width: 200px;
+        margin-bottom: 60px;
+    }
+    
+    .t-45{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .promo {
+        font-size: 28px;
+    }
+    
+    .choise{
+        margin-top: 60px;
+        font-size: 46px;
+        font-weight: 500;
+    }
+    
+    .mini-menu{
+        margin: 30px auto 60px;
+        width: 76%;
+    }
+    
+    .mini-position{
+        align-items: center;
+        width: 200px;
+        height: 480px;
+    }
+    
+    .burger-pic{
+        border-radius: 200px;
+        width: 200px;
+    }
+    
+    .burger-name{
+        font-size: 30px;
+    }
+    
+    .burger-discr{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .burger-pric{
+        font-size: 27px;
+    }
+    
+    .extr-cheese{
+        width: 200px;
+        height: 200px;
+        font-size: 18px;
+    }
+    
+    .more-in-menu{
+        font-size: 30px;
+        top: -80px;
+    }
+    
+    .call-us{
+        border-radius: 20px;
+        font-size: 40px;
+        max-width: 620px;
+        height: 130px;
+        margin: 50px auto;
+    }  
+    
+}
+
+@media (max-width: 1130px) {
+    .stimulate {
+        margin: 30px auto;
+        width: 76%;
+        font-size: 26px;
+        flex-direction: column-reverse;
+    }
+
+    .label{
+        margin: 30px auto;
+        text-align: center;
+    }
+    
+    .label p:first-child{
+        font-size: 40px;
+    }
+    
+    .label p:last-child{
+        font-size: 26px;
+    }
+    
+    .order-button{
+        margin-top: 20px;
+        font-size: 26px;
+        padding: 15px;
+
+    }
+    .big-burger{
+        height: 520px;
+        outline-offset: -15px;
+    }
+    
+    .time {
+        margin: 30px auto;
+        padding: 0 12%;
+        width: 76%;
+        font-size: 26px;
+    }
+    
+    .work-hours{
+        width: 350px;
+        height: 410px;
+    }
+    
+    .visit-us{
+        width: 350px;
+        height: 410px;
+    }
+    
+    .timer{
+        max-width: 160px;
+        margin-bottom: 20px;
+    }
+    
+    .meet-point {
+        max-width: 160px;
+        margin-bottom: 60px;
+    }
+    
+    .t-45{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .promo {
+        font-size: 28px;
+    }
+    
+    .choise{
+        margin-top: 60px;
+        font-size: 38px;
+        font-weight: 500;
+    }
+    
+    .mini-menu{
+        margin: 30px auto 60px;
+        width: 76%;
+        justify-content: space-around;
+    }
+    
+    .mini-position{
+        align-items: center;
+        width: 200px;
+        height: 450px;
+    }
+    
+    #extra{
+        display: none;
+    }
+
+    .burger-pic{
+        border-radius: 200px;
+        width: 200px;
+    }
+    
+    .burger-name{
+        font-size: 30px;
+    }
+    
+    .burger-discr{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .burger-pric{
+        font-size: 27px;
+    }
+    
+    .extr-cheese{
+        width: 200px;
+        height: 200px;
+        font-size: 18px;
+    }
+    
+    .more-in-menu{
+        font-size: 30px;
+        top: -80px;
+    }
+    
+    .call-us{
+        border-radius: 20px;
+        font-size: 30px;
+        max-width: 450px;
+        height: 100px;
+        margin: 30px auto;
+    }  
+    
+}
+@media (max-width: 850px) {
+    .stimulate {
+        margin: 30px auto;
+        width: 76%;
+        font-size: 26px;
+        flex-direction: column-reverse;
+    }
+
+    .label{
+        margin: 30px auto;
+        text-align: center;
+    }
+    
+    .label p:first-child{
+        font-size: 40px;
+    }
+    
+    .label p:last-child{
+        font-size: 26px;
+    }
+    
+    .order-button{
+        margin-top: 20px;
+        font-size: 26px;
+        padding: 15px;
+
+    }
+    .big-burger{
+        height: 430px;
+        outline-offset: -15px;
+    }
+    
+    .time {
+        margin: 30px auto;
+        padding: 0 12%;
+        width: 76%;
+        font-size: 26px;
+        flex-direction: column;
+    }
+    
+    .work-hours{
+        width: 380px;
+        height: 410px;
+    }
+    
+    .visit-us{
+        width: 380px;
+        height: 410px;
+    }
+    
+    .timer{
+        max-width: 160px;
+        margin-bottom: 20px;
+    }
+    
+    .meet-point {
+        max-width: 160px;
+        margin-bottom: 60px;
+    }
+    
+    .t-45{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .promo {
+        font-size: 28px;
+    }
+    
+    .choise{
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .mini-menu{
+        margin: 15px auto 15px;
+        width: 90%;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .mini-position{
+        align-items: center;
+        width: 210px;
+        height: 420px;
+    }
+
+    .mini-position:last-child {
+        display: none;
+    }
+
+    #hor{
+        margin: 0 auto;
+        display: flex;
+        height: 210px;
+        width: 410px;
+        justify-content: start;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #hor .extr-cheese{
+        width: 210px;
+        height: 210px;
+        font-size: 20px;
+    }
+    #hor .more-in-menu{
+        font-size: 30px;
+        top: 0px;
+    }
+
+    .burger-pic{
+        width: 210px;
+    }
+    
+    .burger-name{
+        font-size: 26px;
+    }
+    
+    .burger-discr{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .burger-pric{
+        font-size: 22px;
+    }
+    .call-us{
+        border-radius: 20px;
+        font-size: 25px;
+        width: 410px;
+        height: 100px;
+        margin: 30px auto;
+    }  
+
+}
+
+@media (max-width: 460px) {
+    .stimulate {
+        margin: 15px auto;
+        font-size: 16px;
+    }
+
+    .label{
+        margin-top: 15px;
+    }
+    
+    .label p:first-child{
+        font-size: 28px;
+    }
+    
+    .label p:last-child{
+        font-size: 22px;
+    }
+    
+    .order-button{
+        margin-top: 12px;
+        font-size: 18px;
+        padding: 10px;
+
+    }
+    hr{
+        height: 1px;
+    }
+    .big-burger{
+        height: 280px;
+        outline-offset: -8px;
+    }
+    
+    .time {
+        margin: 30px auto;
+        padding: 0 12%;
+        width: 76%;
+        font-size: 16px;
+        flex-direction: column-reverse;
+    }
+    
+    .work-hours{
+        height: 210px;
+    }
+    
+    .visit-us{
+        height: 180px;
+    }
+    
+    .timer{
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .meet-point {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .t-45{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .promo {
+        font-size: 17px;
+    }
+    
+    .choise{
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .mini-menu{
+        margin: 15px auto 15px;
+        width: 90%;
+        justify-content: center;
+    }
+    
+    .mini-position{
+        align-items: center;
+        width: 140px;
+        height: 330px;
+    }
+
+    .mini-position:last-child {
+        display: none;
+    }
+
+    #hor{
+        margin: 0 auto;
+        display: flex;
+        height: 135px;
+        width: 253px;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #hor .extr-cheese{
+        width: 135px;
+        height: 135px;
+        font-size: 12px;
+    }
+    #hor .more-in-menu{
+        font-size: 20px;
+        top: 0px;
+    }
+
+    .burger-pic{
+        width: 135px;
+    }
+    
+    .burger-name{
+        font-size: 18px;
+    }
+    
+    .burger-discr{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .burger-pric{
+        font-size: 15px;
+    }
+    
+    #small{
+        display: inline;
+    }
+    
+    
+    
+    .call-us{
+        border-radius: 20px;
+        font-size: 22px;
+        width: 260px;
+        height: 110px;
+        margin: 30px auto;
+    }  
+    
+}
